@@ -48,4 +48,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonAmarillo" />
 
+    <Button
+        android:id="@+id/buttonPrueba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prueba"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="379dp" />
+
 </android.support.constraint.ConstraintLayout>
