@@ -1,6 +1,7 @@
 package com.clemenciomorales.myapplication.example;
 
 import android.content.Context;
+import android.graphics.Paint;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -59,11 +60,12 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         void bind(int position) {
             // check the state of the model
             if (!items.get(position).getChecked()) {
-                mCheckedTextView.setChecked(false);}
+                mCheckedTextView.setChecked(false);
+            }
             else {
                 mCheckedTextView.setChecked(true);
             }
-            mCheckedTextView.setText(String.valueOf(items.get(position).getPosition()));
+            mCheckedTextView.setText(String.valueOf(items.get(position).toString()));
         }
 
         @Override
@@ -72,10 +74,12 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             if (!items.get(adapterPosition).getChecked()) {
                 mCheckedTextView.setChecked(true);
                 items.get(adapterPosition).setChecked(true);
+                mCheckedTextView.setPaintFlags(mCheckedTextView.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
             }
             else  {
                 mCheckedTextView.setChecked(false);
                 items.get(adapterPosition).setChecked(false);
+                mCheckedTextView.setPaintFlags(mCheckedTextView.getPaintFlags() & (~ Paint.STRIKE_THRU_TEXT_FLAG));
             }
         }
 

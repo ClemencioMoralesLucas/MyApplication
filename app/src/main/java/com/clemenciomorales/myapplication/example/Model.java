@@ -34,9 +34,6 @@ public class Model {
 
     @Override
     public String toString() {
-        return "Model{" +
-                "position=" + position +
-                ", techniqueName='" + techniqueName + '\'' +
-                '}';
+        return position + "." + techniqueName;
     }
 }

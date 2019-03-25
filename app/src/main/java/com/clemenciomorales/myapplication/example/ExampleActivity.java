@@ -34,6 +34,7 @@ public class ExampleActivity extends AppCompatActivity {
 
         adapter.loadItems(items);
     }
+
     private void fillItems() {
         for (int x = 0; x <=100; x++) {
             Model model = new Model();
