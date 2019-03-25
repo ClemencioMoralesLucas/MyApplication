@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 public class NaranjaActivity extends AppCompatActivity {
 
+    //Autor Carlos Morales Lucas
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

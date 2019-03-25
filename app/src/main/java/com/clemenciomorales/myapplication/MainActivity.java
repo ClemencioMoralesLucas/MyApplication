@@ -11,6 +11,8 @@ import com.clemenciomorales.myapplication.example.ExampleActivity;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Autor Carlos Morales Lucas
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
