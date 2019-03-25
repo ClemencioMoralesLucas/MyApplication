@@ -64,6 +64,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             }
             else {
                 mCheckedTextView.setChecked(true);
+                mCheckedTextView.setPaintFlags(mCheckedTextView.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
             }
             mCheckedTextView.setText(String.valueOf(items.get(position).toString()));
         }
