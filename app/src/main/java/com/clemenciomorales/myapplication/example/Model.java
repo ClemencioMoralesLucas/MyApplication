@@ -6,6 +6,11 @@ public class Model {
 
     private String techniqueName;
 
+    public Model(int position, String techniqueName) {
+        this.setPosition(position);
+        this.setTechniqueName(techniqueName);
+    }
+
     public int getPosition() {
         return position;
     }

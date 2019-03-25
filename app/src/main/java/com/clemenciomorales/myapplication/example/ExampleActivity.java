@@ -36,11 +36,6 @@ public class ExampleActivity extends AppCompatActivity {
     }
 
     private void fillItems() {
-        for (int x = 0; x <=100; x++) {
-            Model model = new Model();
-            model.setPosition(x+1);
-            model.setTechniqueName("Patada circular");
-            items.add(model);
-        }
+        items.addAll(AmarilloTechniques.getTechniques());
     }
 }
